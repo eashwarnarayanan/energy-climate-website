@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Energy & Climate Change</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+    /* General Styles */
+    body {
+        font-family: 'Roboto', Arial, sans-serif;
+        margin: 0;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f0f4f8;
+    }
+    html { scroll-behavior: smooth; }
+    a { text-decoration: none; }
+    
+    /* Header */
+    header {
+        background: linear-gradient(135deg, #0288D1, #26C6DA);
+        color: white;
+        padding: 3rem 1rem;
+        text-align: center;
+    }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.2rem; }
+
+    /* Navigation */
+    nav {
+        background-color: #2E7D32;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    nav a {
+        color: white;
+        padding: 1rem 2rem;
+        display: block;
+        transition: background 0.3s;
+    }
+    nav a:hover { background-color: #1B5E20; }
+
+    /* Sections */
+    section {
+        padding: 2.5rem 1rem;
+        max-width: 900px;
+        margin: auto;
+        margin-bottom: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        transition: background-color 0.3s;
+    }
+    section:nth-child(odd) { background-color: #ffffff; }
+    section:nth-child(even) { background-color: #e8f5e9; }
+    h2 { color: #0288D1; margin-bottom: 1rem; }
+    p { margin-bottom: 1rem; }
+
+    /* Images */
+    img {
+        max-width: 100%;
+        border-radius: 8px;
+        transition: transform 0.3s;
+    }
+    img:hover { transform: scale(1.05); }
+
+    /* Grid layout for images + text */
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    @media(max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+
+    /* Highlight box */
+    .highlight {
+        background-color: #fff9c4;
+        padding: 12px;
+        border-left: 5px solid #0288D1;
+        border-radius: 5px;
+        margin: 1rem 0;
+        font-weight: 500;
+    }
+
+    /* Icons */
+    .icon { margin-right: 6px; color: #0288D1; }
+
+    /* Call-to-action */
+    .cta {
+        background-color: #ffecb3;
+        text-align: center;
+        padding: 2rem;
+        border-radius: 10px;
+        margin-top: 2rem;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+    .cta h2 { color: #FF8F00; }
+    .cta p { font-size: 1.2rem; }
+
+    /* Footer */
+    footer {
+        background-color: #2E7D32;
+        color: white;
+        text-align: center;
+        padding: 1.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* About Us - Team Grid */
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+    .team-member {
+        background-color: white;
+        border-radius: 10px;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .team-member:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+    .team-member img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 0.5rem;
+    }
+    .team-member h3 { margin: 0.5rem 0 0.2rem 0; color: #0288D1; }
+    .team-member p { font-size: 0.9rem; margin: 0; }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Energy & the Environment</h1>
+    <p><strong>Central Idea:</strong> Energy choices may shape the way we interact with the environment</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#causes">Causes</a>
+    <a href="#balance">Balancing Energy</a>
+    <a href="#case-studies">Renewable Energy</a>
+    <a href="#solutions">Solutions</a>
+    <a href="#about">About Us</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome</h2>
+    <p>Climate change is one of the biggest challenges of our time. The way we produce and use energy affects the environment in powerful ways. Our research explores how energy production and consumption impacts the Earth, how to balance human needs with environmental protection, and how renewable energy can lead us to a sustainable future.</p>
+    <img src="images/Ex-EarthFromSpace.jpg" alt="Earth from space">
+    <div class="highlight"><i class="fas fa-globe icon"></i>Key Fact: Energy choices affect global temperatures and ecosystems.</div>
+</section>
+
+<section id="causes">
+    <h2>Causes: How Energy Production & Consumption Affect the Environment</h2>
+    <div class="grid">
+        <p>
+            <i class="fas fa-smog icon"></i>Most of the world's energy comes from <strong>fossil fuels</strong> (coal, oil, gas).<br>
+            <i class="fas fa-fire icon"></i>Burning fossil fuels releases <strong>greenhouse gases</strong> like carbon dioxide.<br>
+            <i class="fas fa-temperature-high icon"></i>These gases trap heat and cause <strong>global warming</strong>.<br>
+            <i class="fas fa-tree icon"></i>Energy production also leads to <strong>deforestation, air pollution, and water pollution</strong>.
+        </p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <img src="images/Ex-gg2.jpg" alt="Coal Plant" style="width:48%;">
+            <img src="images/Ex-deforestation.jpg" alt="Deforestation" style="width:48%;">
+        </div>
+    </div>
+</section>
+
+<section id="balance">
+    <h2>Balancing Energy Consumption with Environmental Protection</h2>
+    <div class="grid">
+        <p>
+            <i class="fas fa-bolt icon"></i>Energy is needed for <strong>transport, electricity, heating, and technology</strong>.<br>
+            <i class="fas fa-seedling icon"></i>High energy use increases emissions → climate change.<br>
+            <i class="fas fa-lightbulb icon"></i>Solutions:<br>
+            &nbsp;&nbsp;• Improve <strong>energy efficiency</strong> (LED lights, electric vehicles).<br>
+            &nbsp;&nbsp;• Use <strong>cleaner technologies</strong> (wind, solar, hydro).<br>
+            &nbsp;&nbsp;• Encourage <strong>individual actions</strong> (turn off lights, use public transport).
+        </p>
+        <img src="images/Ex-solarpanels.jpg" alt="Solar Panels">
+    </div>
+</section>
+
+<section id="case-studies">
+    <h2>Case Studies: How Some Countries Use More Renewable Energy</h2>
+    <div class="grid">
+        <p>
+            <i class="fas fa-flag-iceland icon"></i><strong>Iceland</strong> – Nearly 100% renewable (geothermal + hydro).<br>
+            <i class="fas fa-flag icon"></i><strong>Norway</strong> – 98% hydropower.<br>
+            <i class="fas fa-flag icon"></i><strong>Germany</strong> – Major investment in solar & wind.<br>
+            These countries show it is possible to power economies <strong>without heavy fossil fuel use</strong>.
+        </p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <img src="images/Ex-Windmill.jpg" alt="Windmill" style="width:48%;">
+            <img src="images/Ex-Hydropower.jpg" alt="Hydropower" style="width:48%;">
+        </div>
+    </div>
+</section>
+
+<section id="solutions">
+    <h2>Solutions</h2>
+    <div class="grid">
+        <p>
+            <i class="fas fa-landmark icon"></i><strong>Governments:</strong> support renewable energy, set emission targets.<br>
+            <i class="fas fa-building icon"></i><strong>Companies:</strong> invest in clean energy, reduce waste.<br>
+            <i class="fas fa-house icon"></i><strong>Communities:</strong> support recycling, tree planting, sustainable transport.<br>
+            <i class="fas fa-users icon"></i><strong>Individuals:</strong> save energy, choose renewable power, raise awareness.
+        </p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <img src="images/Ex-Treeplanting.jpg" alt="Tree Planting" style="width:48%;">
+            <img src="images/Ex-evcharging.jpg" alt="EV Charging" style="width:48%;">
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Take Action Today!</h2>
+    <p>Turn off unused lights, ride a bike, plant a tree, or talk to your family about renewable energy. Every small action helps the planet!</p>
+</section>
+
+<!-- Polished About Us Section -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>We are a group of Year 6 students passionate about understanding climate change and exploring ways to protect our environment. Each team member contributed to researching, analyzing, and presenting key aspects of energy and sustainability.</p>
+    
+    <div class="team-grid">
+        <div class="team-member">
+            <h3>Arya Yelavarthi</h3>
+            <p>Research on Causes of Climate Change</p>
+        </div>
+        <div class="team-member">
+            <h3>Rajveer Singh</h3>
+            <p>Research on Balancing Energy</p>
+        </div>
+        <div class="team-member">
+            <h3>Eashwar Narayanan</h3>
+            <p>Case Studies & Website Designer</p>
+        </div>
+        <div class="team-member">
+            <h3>Kevin Peng</h3>
+            <p>Solutions & Recommendations</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Alamanda K-9 College Year 6 Exhibition - Climate Change Research Project
+</footer>
+
+</body>
+</html>
